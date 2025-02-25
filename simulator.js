@@ -28,6 +28,7 @@ async function sendRequest(userId) {
         if (Math.random() > 0.5) {
             response = await axios.post(config.baseURL, { data: `User ${userId} request` });
         } else {
+            response = await axios.get(config.baseURL);
         }
         const duration = Date.now() - startTime;
         
