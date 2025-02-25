@@ -49,8 +49,8 @@ export function handleSummary(data) {
         Simulation Results:
         ---------------------------
         Total Requests: ${data.metrics.iterations.values.count}
-        Successful Requests: ${data.metrics.success_count ? data.metrics.success_count.count : 0}
-        Failed Requests: ${data.metrics.error_count ? data.metrics.error_count.count : 0}
+        Successful Requests: ${data.metrics.success_count ? data.metrics.success_count.values.count : 0}
+        Failed Requests: ${data.metrics.error_count ? data.metrics.error_count.values.count : 0}
         
         Response Times (ms):
           - Avg: ${data.metrics.response_time.values.avg.toFixed(2)}
