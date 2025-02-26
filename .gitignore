@@ -1,1 +1,3 @@
 node_modules
+src/locust/lib/*
+src/locust/__pycache__
